@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/basic-contact-form-T3t9AbJpR1)
+- Live Site URL: [Live site URL](https://mike-kay.github.io/03-contact-form-main/)
 
 ## My process
 
