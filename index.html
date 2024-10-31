@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Frontend Mentor | Contact form</title>
+  </head>
+  <body>
+    <div class="success-state">
+      <h3>
+        <img src="./assets/images/icon-success-check.svg" alt="" />
+        message sent!
+      </h3>
+      <p>Thanks for completing the form. We'll be in touch soon!</p>
+    </div>
+    <!-- sr form-error notification -->
+    <p class="sr-only sr-msg"></p>
+
+    <main class="main">
+      <section class="contact-form">
+        <form class="form">
+          <h1 class="form-header">contact us</h1>
+          <div class="text-column">
+            <!-- Single form row -->
+            <div class="form-row">
+              <label for="first-name" class="label"
+                >first name
+                <span class="asterik" aria-hidden="true">*</span></label
+              >
+              <input
+                type="text"
+                name="first-name"
+                id="first-name"
+                class="form-input fn"
+                autocomplete="off"
+                aria-required="true"
+              />
+              <p class="error" aria-hidden="true">This field is required</p>
+              <p class="error sr-only" id="fn-error"></p>
+            </div>
+            <!-- end of Single form row -->
+            <!-- Single form row -->
+            <div class="form-row">
+              <label for="last-name" class="label"
+                >last name
+                <span class="asterik" aria-hidden="true">*</span></label
+              >
+              <input
+                type="text"
+                name="last-name"
+                id="last-name"
+                class="form-input ln"
+                aria-required="true"
+                autocomplete="off"
+              />
+              <p class="error" aria-hidden="true">This field is required</p>
+              <p class="error sr-only"></p>
+            </div>
+            <!-- end of Single form row -->
+          </div>
+          <!-- end of Text column -->
+
+          <!-- Email -->
+          <div class="form-row">
+            <label for="email" class="label"
+              >email address
+              <span class="asterik" aria-hidden="true">*</span></label
+            >
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-input em"
+              aria-required="true"
+              autocomplete="off"
+            />
+            <p class="error" aria-hidden="true">
+              Please enter a valid email address
+            </p>
+            <p class="sr-only"></p>
+          </div>
+          <!-- end of Email -->
+
+          <!-- Query column -->
+          <fieldset class="query-column" aria-required="true">
+            <legend>
+              <p class="label">
+                query type <span class="asterik" aria-hidden="true">*</span>
+              </p>
+            </legend>
+            <div>
+              <!-- Single form row -->
+              <div class="form-row rel-control">
+                <input
+                  type="radio"
+                  name="query-type"
+                  id="general-enquiry"
+                  class="rad-input"
+                  value="general-enquiry"
+                />
+                <label for="general-enquiry" class="rad-label"
+                  >general enquiry</label
+                >
+                <p class="error sr-only"></p>
+              </div>
+              <!-- end of Single form row -->
+              <!-- Single form row -->
+              <div class="form-row rel-control">
+                <input
+                  type="radio"
+                  name="query-type"
+                  id="support-request"
+                  class="rad-input"
+                  value="support-request"
+                />
+                <label for="support-request" class="rad-label"
+                  >support request</label
+                >
+                <p class="error sr-only"></p>
+              </div>
+              <!-- end of Single form row -->
+            </div>
+            <p class="error" aria-hidden="true">Please select a query</p>
+          </fieldset>
+          <!-- end of Query column -->
+
+          <!-- Message Input -->
+          <div class="form-row msg-column">
+            <label for="message" class="label"
+              >message <span class="asterik" aria-hidden="true">*</span></label
+            >
+            <textarea
+              name="message"
+              id="message"
+              class="msg-input form-input"
+              aria-required="true"
+            ></textarea>
+            <p class="error" aria-hidden="true">This field is required</p>
+            <p class="error sr-only"></p>
+          </div>
+          <!-- end of Message Input -->
+
+          <!-- Check input -->
+          <div class="check-column rel-control">
+            <input
+              type="checkbox"
+              name="your-consent"
+              id="your-consent"
+              class="check-input"
+              aria-required="true"
+            />
+            <label for="your-consent" class="check-label">
+              <img
+                src="./assets/images/icon-checkbox-check.svg"
+                alt=""
+                class="checkbox-img"
+              />
+              <span class="checbox-span">
+                I consent to being contacted by the team
+                <span class="asterik" aria-hidden="true">*</span>
+              </span>
+            </label>
+            <p class="sr-only"></p>
+            <p class="error" aria-hidden="true">
+              To submit this form, please consent to being contacted
+            </p>
+          </div>
+
+          <!-- Submit -->
+          <button type="submit" title="submit" class="submit-btn">
+            submit
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        Contact form challenge by
+        <a href="https://www.frontendmentor.io/" class="footer-link"
+          >frontend mentor</a
+        >.
+        <br />
+        built by
+        <a href="#" class="footer-link"><span>&diamond;</span> mike-kay</a>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
